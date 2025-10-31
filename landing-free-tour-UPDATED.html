@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tu Guía Local Inteligente — Landing</title>
+  <meta name="description" content="Descubre ciudades a tu ritmo con un guía virtual con IA. Tours personalizados por voz, mapas y contenido local." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:14px;
+    }
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{margin:0;background:linear-gradient(180deg,#071427 0%, #071b2a 100%);color:#e6eef6;line-height:1.5;}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0ea5a4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052024}
+    .logo h1{font-size:16px;margin:0}
+    .nav{display:flex;gap:12px;align-items:center}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.nav{display:none}}
+    .hero h2{font-size:34px;margin:0 0 12px 0;color:#fff}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn-primary{background:var(--accent);color:#042023;padding:12px 18px;border-radius:12px;border:none;font-weight:600;text-decoration:none;cursor:pointer}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .mock{height:420px;border-radius:12px;background:
+      linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);text-align:center;padding:18px}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}
+    @media (max-width:880px){.feature-grid{grid-template-columns:1fr}}
+    .feature{background:var(--glass);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .feature h4{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:14px}
+    .subscribe{display:flex;gap:10px;margin-top:12px}
+    input[type="email"]{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+    footer{margin-top:36px;padding:16px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    small{font-size:13px}
+    .note{font-size:13px;color:var(--muted);margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark">TG</div>
+        <div>
+          <h1>Tu Guía Local Inteligente</h1>
+          <small class="muted">Tours digitales · IA · Guías locales</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn-ghost" href="#how">Cómo funciona</a>
+        <a class="btn-ghost" href="#who">Para quién</a>
+        <a class="btn-ghost" href="#join">Beta</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h2>Descubre ciudades a tu ritmo.</h2>
+        <p>Tu guía turístico inteligente con IA. Recorridos personalizados por voz, mapas interactivos y la posibilidad de preguntar o cambiar el tour en tiempo real.</p>
+        
+<div class="cta-row">
+  <a class="btn-primary" href="#survey" onclick="document.getElementById('survey').scrollIntoView({behavior:'smooth'})">Responder encuesta</a>
+  <button class="btn-ghost" onclick="document.getElementById('email').scrollIntoView({behavior:'smooth'})">Quiero probarla cuando esté lista</button>
+</div>
+
+
+        <div style="margin-top:20px" class="card">
+          <div class="muted" style="font-size:13px">¿Por qué validar?</div>
+          <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap">
+            <div class="feature" style="min-width:160px"><strong>Experiencia real</strong><div class="muted">Voz + GPS + mapa</div></div>
+            <div class="feature" style="min-width:160px"><strong>Personalización</strong><div class="muted">Rutas según intereses</div></div>
+            <div class="feature" style="min-width:160px"><strong>Local + IA</strong><div class="muted">Contenido curado y dinámico</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card mock" aria-hidden="true">
+        <div style="max-width:320px">
+          <div style="font-weight:600;font-size:18px;margin-bottom:8px">Mock: Tour por Centro</div>
+          <div class="muted">Mapa, audio activado por ubicación y guía dinámico con IA.</div>
+          <div style="margin-top:18px;font-size:13px;color:var(--muted)"><img src="A_2D_digital_illustration_advertises_a_smart_local.png" alt="Tu Guía Local Inteligente - Hero" style="width:100%;border-radius:12px;"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="card" style="margin-bottom:18px">
+      <h3 style="margin-top:6px">Cómo funciona</h3>
+      <p class="muted">Tres pasos simples: eliges tipo de tour → la app te guía por voz y mapa → puedes preguntar o cambiar la ruta en cualquier momento.</p>
+
+      <div class="feature-grid" style="margin-top:16px">
+        <div class="feature">
+          <h4>Guía por voz</h4>
+          <div class="muted">Narraciones naturales diseñadas para caminar, manos libres.</div>
+        </div>
+        <div class="feature">
+          <h4>Adaptación en tiempo real</h4>
+          <div class="muted">La ruta cambia según tu ubicación, tiempo disponible e intereses.</div>
+        </div>
+        <div class="feature">
+          <h4>Contenido curado</h4>
+          <div class="muted">Historias locales, datos verificados y opciones creadas por guías.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO -->
+    <section id="who" style="margin:18px 0">
+      <div class="card">
+        <h3>¿A quién va dirigida?</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+          <div class="feature" style="min-width:220px">
+            <strong>Viajeros independientes</strong>
+            <div class="muted">Quieren explorar sin horarios ni grupos.</div>
+          </div>
+          <div class="feature" style="min-width:220px">
+            <strong>Parejas y grupos pequeños</strong>
+            <div class="muted">Experiencias flexibles y personalizadas.</div>
+          </div>
+          <div class="feature" style="min-width:220px">
+            <strong>Guías y creadores locales</strong>
+            <div class="muted">Pueden crear y monetizar sus propios tours.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURVEY CTA -->
+    <section id="survey" style="margin-top:18px">
+      <div class="card">
+        <h3>Queremos tu opinión</h3>
+        <p class="muted">Ayúdanos con 2 minutos: responde la encuesta para construir la app que realmente quieres.</p>
+        <p style="margin:10px 0">
+          <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfsiRxe41qW9hGxv-ilwKKUB6joE43xW1ZBcMRoRxSFrW7POA/viewform?usp=header" target="_blank" rel="noopener">Responder encuesta</a>
+          <span class="note">Gracias por tu ayuda 🙌</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- SIGNUP -->
+    <section id="join" style="margin-top:20px">
+      <div class="card">
+        <h3>Únete a la lista de espera</h3>
+        <p class="muted">Déjanos tu email y te avisamos cuando lancemos la beta.</p>
+
+        <form id="signupForm" onsubmit="handleSubscribe(event)" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+          <input id="email" type="email" placeholder="tu@correo.com" required aria-label="email" />
+          <button class="btn-primary" type="submit">Avísame</button>
+        </form>
+
+        <div id="subscribeMsg" class="note" aria-live="polite" style="display:none"></div>
+
+        <p class="note" style="margin-top:12px">¿Prefieres dejar feedback más detallado? <a href="#survey" style="color:var(--accent);text-decoration:none" onclick="document.getElementById('survey').scrollIntoView({behavior:'smooth'})">Responde la encuesta</a>.</p>
+      </div>
+    </section>
+
+    <footer>
+      <small>© 2025 Tu Guía Local Inteligente — Desarrollado por viajeros para viajeros</small>
+      <div class="muted">Contacto: <a href="mailto:contacto@tuguiadigital.com" style="color:var(--muted);text-decoration:none">contacto@tuguiadigital.com</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple subscribe handler: opens mail client with email (works without backend).
+    // Replace with your Formspree / API by replacing this function or form action.
+    function handleSubscribe(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('subscribeMsg');
+      if(!email || !/.+@.+\..+/.test(email)){
+        msg.style.display = 'block'; msg.textContent = 'Introduce un email válido.';
+        return;
+      }
+      // Open default mail client prefilled (quick no-backend solution).
+      const subject = encodeURIComponent('Suscripción - Lista Beta Tu Guía Local Inteligente');
+      const body = encodeURIComponent('Hola,\\n\\nMe apunto a la lista de espera. Mi email: ' + email + '\\n\\nGracias.');
+      // change the mailto: address below to your real receiving email
+      const mailto = 'mailto:contacto@tuguiadigital.com?subject=' + subject + '&body=' + body;
+      window.location.href = mailto;
+      msg.style.display='block'; msg.textContent='Se abrirá tu cliente de correo para confirmar la suscripción. ¡Gracias!';
+    }
+  </script>
+</body>
+</html>
